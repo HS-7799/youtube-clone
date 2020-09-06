@@ -23,7 +23,7 @@
                         <div v-if="!video.thumbnail">
                             Loading thumbnail...
                         </div>
-                        <img v-else :src="'/storage/'+video.thumbnail" width="100%" height="100%" alt="">
+                        <img v-else :src="'/storage'+video.thumbnail" width="100%" height="100%" alt="">
                     </div>
                     <div class="col">
                         <a v-if="video.percentage && video.percentage === 100" :href="`/videos/${video.id}`">
