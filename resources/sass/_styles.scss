@@ -1,0 +1,33 @@
+.channel-avatar
+{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+.channel-avatar-overlay
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top:0
+}
+.channel-avatar-overlay img
+{
+    margin-top: 20px;
+    margin-left:20px
+}
+
+.channel-avatar-overlay img:hover
+{
+    background-color: rgba(1,1,1,0.5);
+}
+.channel-avatar :hover
+{
+    background-color: rgba(0,0,0,0.5);
+}
+.channel-avatar:hover .channel-avatar-overlay
+{
+    display: block;
+}
